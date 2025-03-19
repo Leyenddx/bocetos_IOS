@@ -6,18 +6,22 @@
 //
 import Foundation
 
-struct Temporada{
+struct Temporada: Identifiable{
+    var id = UUID()
+    
     var nombre_temporada: String
     var cantidad_capotulos: Int
 }
 
-struct Plataforma{
+struct Plataforma: Identifiable{
+    var id = UUID()
+    
     var nombre_plataforma: String
     var icono: String
 }
 
 struct InformacionSerie: Identifiable{
-    var id: ObjectIdentifier
+    var id = UUID()
     
     var nombre:String
     var tipo:String
