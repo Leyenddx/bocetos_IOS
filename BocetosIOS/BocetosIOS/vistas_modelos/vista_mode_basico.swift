@@ -26,4 +26,8 @@ class VistaModeloBasico{
         
         return true
     }
+
+    func cambiar_a_agregar_serie() -> Void{
+        estado_actual_de_la_aplicacion = .agregando_series // CAmbiamos a la pantalla de agregar series
+    }
 }
